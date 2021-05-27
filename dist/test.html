@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="detail">
+            <h3>Met Him Last Night</h3>
+            <p>
+                <span class="artist"> Demi Lovato </span
+                ><span class="artist"> Ariana Grande </span
+                ><span class="album">zhuaji</span>
+            </p>
+        </div>
+
+        <style>
+            .detail p span:last-of-type {
+                background: red;
+            }
+        </style>
+
+        <div class="card">
+            <div class="left">
+                <span>偏移数量用于分页如页数偏移数量用于分页如页数</span>
+            </div>
+            <div class="right"></div>
+        </div>
+
+        <style>
+            .card {
+                width: 200px;
+                display: flex;
+                background: lightblue;
+                align-items: center;
+            }
+            .card .left {
+                font-size: 20px;
+
+                /* flex-grow: 1;
+                flex-basis: 0; */
+                /* flex-shrink: 1;
+                flex-basis: 0; */
+                /* flex: 1 0 auto; */
+                flex: 1;
+                
+
+                /* text-overflow: ellipsis; */
+            }
+            .card .left span {
+                /* width: 100%; */
+
+                display: -webkit-box;
+                -webkit-line-clamp: 1;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+            }
+            .card .right {
+                width: 50px;
+                height: 50px;
+                background: blue;
+            }
+        </style>
+    </body>
+</html>

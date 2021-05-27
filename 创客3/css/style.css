@@ -1,0 +1,425 @@
+/*去掉默认的内外边距*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+
+/*默认去掉所有a标签的下划线*/
+
+a {
+	text-decoration: none;
+}
+
+
+/*不管是无序列表还是有序列表，都去掉样式*/
+
+li {
+	list-style: none;
+}
+
+
+/*因为button使用的是图片作为背景，所以可以去掉边框*/
+
+body {
+	width: auto;
+	background-color: white;
+}
+
+
+/*清除浮动*/
+
+.clearfix:before,
+.clearfix:after {
+	content: "";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+
+/*兼容IE6~7*/
+
+.clearfix {
+	*zoom: 1;
+}
+
+
+/*设置版心 1200px*/
+
+.w {
+	width: 1200px;
+	margin: auto;
+}
+
+.header {
+	height: 52px;
+	margin: 30px auto;
+}
+
+
+/*设置logo*/
+
+.logo {
+	float: left;
+	margin-right: 60px;
+}
+
+.nav {
+	float: left;
+}
+
+.nav ul li {
+	float: left;
+}
+
+.nav ul li a {
+	display: inline-block;
+	width: ;
+	height: 40px;
+	line-height: 40px;
+	color: #050505;
+	font-size: 18px;
+	padding: 0 10px;
+	padding-top: 6px;
+	margin-right: 20px;
+}
+
+
+/*鼠标经过链接 才有底边框*/
+
+.nav ul li a:hover {
+	border-bottom: 2px solid #00a4ff;
+}
+
+.search {
+	float: left;
+	margin-left: 70px;
+}
+
+.search input {
+	float: left;
+	width: 320px;
+	height: 40px;
+	margin-top: 5px;
+	border: 1px solid #00a4ff;
+	color: #ccc;
+	font-size: 14px;
+	outline: none;
+	padding: 0 10px;
+}
+
+.search button {
+	float: left;
+	width: 50px;
+	height: 42px;
+	background: url(../img/img/btn.png);
+	outline: none;
+	border: none;
+	margin-top: 5px;
+}
+
+
+/*鼠标点击后的效果*/
+
+.search button:active {
+	/*css3提供的透明属性取值0.0~1.0*/
+	opacity: 0.5;
+	
+}
+
+.user {
+	float: left;
+	height: 42px;
+	line-height: 42px;
+	margin-left: 30px;
+	color: #666;
+}
+
+.user img {
+	float: left;
+	width: 42px;
+	height: 42px;
+	border-radius: 100%;
+	margin-top: 5px;
+}
+
+.user span {
+	float: left;
+	display: block;
+	height: 42px;
+	line-height: 42px;
+	margin-top: 5px;
+	margin-left: 10px;
+	font-size: 18px;
+}
+
+
+/*********************************banner start*/
+
+.banner {
+	width: auto;
+	height: 420px;
+	background: #1c036c url(../img/img/banner2.jpg) no-repeat top center;
+}
+
+.subnav {
+	float: left;
+	width: 150px;
+	height: 420px;
+	padding: 0 20px;
+	/*背景半透明*/
+	background: rgba(0, 0, 0, 0.3);
+}
+
+.subnav li {
+	height: 45px;
+	line-height: 45px;
+}
+
+.subnav li a {
+	color: #fff;
+	font-size: 14px;
+}
+
+.subnav li a:hover {
+	color: #00b4ff;
+}
+
+.subnav li span {
+	float: right;
+}
+
+.course {
+	float: right;
+	width: 228px;
+	height: 300px;
+	background-color: #fff;
+	margin-top: 50px;
+	/*background: rgba(0,0,0,0.3);*/
+}
+
+.course-hd {
+	height: 48px;
+	background-color: #9bceea;
+	font-size: 18px;
+	text-align: center;
+	line-height: 48px;
+	color: #fff;
+	font-weight: 700;
+}
+
+.course-bd {
+	padding: 0 15px;
+}
+
+.course-bd ul {
+	margin-top: 5px;
+	padding-top: 5px;
+}
+
+.course-bd ul li {
+	height: 50px;
+	border-bottom: 1px solid #ccc;
+	margin-top: 10px;
+}
+
+.course-bd li h4 {
+	font-size: 14px;
+	color: #4e4e4e;
+}
+
+.course-bd li p {
+	font-size: 12px;
+	color: #a5a5a5;
+}
+
+.all {
+	display: block;
+	height: 38px;
+	border: 1px solid #00a4ff;
+	margin-top: 10px;
+	font-size: 16px;
+	color: #00a4ff;
+	text-align: center;
+	line-height: 38px;
+}
+
+.all:hover {
+	background-color: #00A4FF;
+	color: #fff;
+}
+
+.all:active {
+	color: #fff;
+	background: rgba(0, 164, 255, 0.8);
+}
+
+
+/*.subnav li a{
+	display: inline-block;
+	color: #fff;
+	font-size: 14px;
+	height: 45px;
+	line-height: 45px;
+}*/
+
+
+/*********************************banner end*/
+
+
+/*********************************goods start*/
+
+.goods {
+	height: 60px;
+	background: #fff;
+	margin-top: 10px;
+	line-height: 60px;
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.goods h3 {
+	float: left;
+	margin: 0 30px;
+	font-size: 16px;
+	color: #00a4ff;
+}
+
+.goods-item {
+	float: left;
+	color: #bfbfbf;
+}
+
+.goods-item ul li {
+	float: left;
+}
+
+.goods-item li a {
+	display: inline-block;
+	margin: 0 30px;
+	font-size: 16px;
+	color: #050505;
+}
+
+.goods-item li a:hover {
+	color: #00A4FF;
+}
+
+.mod {
+	float: right;
+	margin-right: 30px;
+	font-size: 14px;
+	color: #00A4FF;
+}
+/*********************************goods end*/
+/*********************************box start*/
+.box{
+	margin-top: 15px;
+}
+.box-hd{
+	height: 60px;
+	line-height: 60px;
+}
+.box-hd h3{
+	float: left;
+	font-size: 20px;
+	color: #494949;
+	font-weight: 400;
+}
+.box-hd a{
+	float: right;
+	margin-right: 30px;
+	color: #a5a5a5;
+	font-size: 12px;
+}
+.box-hd a:hover{
+	color: #00A4FF;
+}
+.box-bd{
+	width: 1215px;
+}
+.box-bd li{
+	float: left;
+}
+.box-bd li a{
+	display: block;
+	width: 228px;
+	height: 270px;
+	margin-right: 15px;
+	margin-bottom: 15px;
+	background-color: #fff;
+	box-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+}
+.box-bd li a:hover{
+	box-shadow: 3px 3px 3px rgba(0,164,255,0.5);
+}
+.box-bd li img{
+	width: 100%;
+}
+.box-bd li h4{
+	margin: 20px;
+	font-size: 14px;
+	color: #050505;
+	font-weight: 400;
+}
+.box-bd li p{
+	margin: 0 20px;
+	font-size: 12px;
+	color: #999;
+}
+.box-bd p span{
+	color: orange;
+}
+
+/*********************************box end*/
+/*********************************footer start*/
+.footer{
+	height: 385px;
+	padding-top: 30px;
+	border-top: 1px solid lightgray;
+}
+.copyright{
+	float: left;
+}
+.copyright p{
+	font-size: 12px;
+	color: #666;
+	margin: 20px 0 15px 0;
+}
+.app{
+	display: block;
+	width: 118px;
+	height: 34px;
+	line-height: 34px;
+	text-align: center;
+	border:1px solid #00A4FF;
+	font-size: 16px;
+	color:#00A4FF;
+}
+.app:hover{
+	background: #00A4FF;
+	color: white;
+}
+.links{
+	float: right;
+}
+.links dl{
+	float: left;
+	margin-left: 90px;
+}
+.links dt{
+	height: 35px;
+	font-size: 16px;
+	color: #333;
+}
+.links dd a{
+	font-size: 12px;
+	color: #333;
+}
+.links dd a:hover{
+	color: #00A4FF;
+}
+/*********************************footer end*/

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <script src="https://cn.vuejs.org/js/vue.js"></script>
+        <link
+            rel="stylesheet"
+            href="https://cdn.staticfile.org/animate.css/4.1.1/animate.min.css"
+        />
+    </head>
+    <body>
+        <h1 class="animate__animated animate__bounce">An animated element</h1>
+        <div id="root">
+            <button @click="show= !show">Toggle</button>
+            <!-- <transition name="xxx">
+                <p
+                    v-if="show"
+                    style="width: 100px; height: 100px; background: red;"
+                >
+                    嘻嘻嘻
+                </p>
+            </transition> -->
+
+            <!-- <transition
+                name="custom-classes-transition"
+                enter-active-class="animated abc-yyy"
+            >
+                <p
+                    v-if="show"
+                    style="width: 100px; height: 100px; background: red;"
+                >
+                    嘻嘻嘻
+                </p>
+            </transition> -->
+            <!-- <transition
+                name="custom-classes-transition"
+                enter-active-class="animate__animated animate__bounce"
+            >
+                <p
+                    v-if="show"
+                    style="width: 100px; height: 100px; background: red;"
+                >
+                    嘻嘻嘻
+                </p>
+            </transition> -->
+            <p
+                v-if="show"
+                style="width: 100px; height: 100px; background: red;"
+            >
+                <mark>xxxxxxxxxxxxxxxxx</mark>
+                <transition
+                    name="custom-classes-transition"
+                    enter-active-class="animate__animated animate__bounce"
+                >
+                    <div v-if="show">嘻嘻嘻</div>
+                </transition>
+            </p>
+        </div>
+        <script>
+            var app = new Vue({
+                el: "#root",
+                data: {
+                    show: false,
+                },
+            });
+        </script>
+
+        <!-- <style>
+            .xxx-enter {
+                margin-left: 200px;
+            }
+            .xxx-enter-active {
+                transition: all 5s;
+            }
+            .xxx-enter-to {
+                margin-left: 0;
+            }
+
+            .xxx-leave {
+                margin-top: 0;
+                opacity: 1;
+            }
+            .xxx-leave-active {
+                transition: all 5s;
+            }
+            .xxx-leave-to {
+                margin-top: 200px;
+                opacity: 0;
+            }
+        </style> -->
+
+        <!-- <style>
+            @keyframes yyy {
+                0% {
+                    margin-left: 200px;
+                    margin-top: 200px;
+                }
+                25% {
+                    margin-left: 150px;
+                    margin-top: 0px;
+                }
+                50% {
+                    margin-left: 100px;
+                    margin-top: 100px;
+                }
+                75% {
+                    margin-left: 50px;
+                    margin-top: 0px;
+                }
+                100% {
+                    margin-left: 0px;
+                    margin-top: 0px;
+                }
+            }
+            .xxx-enter {
+                /* animation: yyy 5s; */
+            }
+            .xxx-enter-active {
+                /* animation: yyy 5s; */
+                animation: yyy 5s;
+            }
+            .xxx-enter-to {
+                /* animation: yyy 5s; */
+            }
+        </style> -->
+
+        <style>
+            @keyframes yyy {
+                0% {
+                    margin-left: 200px;
+                    margin-top: 200px;
+                }
+                25% {
+                    margin-left: 150px;
+                    margin-top: 0px;
+                }
+                50% {
+                    margin-left: 100px;
+                    margin-top: 100px;
+                }
+                75% {
+                    margin-left: 50px;
+                    margin-top: 0px;
+                }
+                100% {
+                    margin-left: 0px;
+                    margin-top: 0px;
+                }
+            }
+            .abc-yyy {
+                animation: yyy 5s;
+            }
+        </style>
+    </body>
+</html>
